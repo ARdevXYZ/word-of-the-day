@@ -5,7 +5,7 @@ export class Text extends Component {
 
         return(
             <React.Fragment>
-                <p>Improve your vocabulary by studying 25 minutes per day!</p>
+                <p>Display definition by clicking the button below</p>
             </React.Fragment>
         );
     }

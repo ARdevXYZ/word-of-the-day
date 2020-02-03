@@ -171,9 +171,45 @@ a, a:link, a:visited {
   display: inline;
 }
 
+#astro {
+  background: magenta;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 960px) {
   body, html, section {
 
+  }
+
+  #sticky {
+    position: fixed;
+    right: 0rem;
+    top: 85.8%;
+    transform: translate(0, -86.8%);
+    background: linear-gradient(lightyellow, peachpuff, lightcyan);
+    height: 12rem;
+    width: 12rem;
+    z-index: 101 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sticky-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    background: linear-gradient(lightyellow, lightcyan);
+    padding: 0.1rem;
+    text-align: center;
   }
 
   section {

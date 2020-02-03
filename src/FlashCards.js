@@ -1,5 +1,6 @@
 import React from 'react'
 import Text from './Text'
+import WordDefinition from './WordDefinition'
 
 
 const FlashCards = () => {
@@ -9,12 +10,12 @@ const FlashCards = () => {
     }
 
     return(
-        <div className="sticky-content">
+        <div>
             <Text />
-            <button onClick={initFlashCards} className="button-class"
+            {/* <button onClick={initFlashCards} className="button-class"
             >
-            Flash Cards!
-            </button>
+            Flash Cardssss!
+            </button> */}
         </div>
     );
 

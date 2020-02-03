@@ -3,7 +3,9 @@ import { render } from 'react-dom'
 import WordCollection from './WordCollection'
 import MainHeader from './MainHeader'
 import MainFooter from './MainFooter'
-import FlashCards from './FlashCards'
+// import WordDefinition from './WordDefinition'
+import Astro from './Astro'
+import * as serviceWorker from './serviceWorker'
 let wordList = [
     {"title": "Febrile", "searchURL": "https://www.google.com/search?q="},
     {"title": "Facile", "searchURL": "https://www.google.com/search?q="},
@@ -105,7 +107,13 @@ render(
 )
 
 render(
-    <FlashCards/>,
+    <Astro/>,
     document.getElementById('sticky')
 )
 
+// render(
+//     <WordDefinition/>,
+//     document.getElementById('sticky')
+// )
+
+serviceWorker.register();
